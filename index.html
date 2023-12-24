@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="C:\Users\anuja\OneDrive\Pictures\Saved Pictures"
+    rel="stylesheet"
+  />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <img src="logo.png" alt="Logo" class="logo">
+
+  <div class="container">
+    <div class="section-container">
+      <button id="focus" class="btn btn-timer btn-focus">Focus</button>
+      <button id="shortbreak" class="btn btn-shortbreak">Short Break</button>
+      <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+    </div>
+    <div class="time-btn-container">
+      <span id="time"></span>
+      <div class="btn-container">
+        <button id="btn-start" class="show">Start</button>
+        <button id="btn-pause" class="hide">Pause</button>
+        <button id="btn-reset" class="hide">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="music-player">
+    <audio id="audioPlayer">
+      <!-- Add your audio sources here -->
+      <source src="Sounds/Soothing - AShamaluevMusic.mp3" type="audio/mpeg">
+      <source src="Sounds/Starseed-chosic.com_.mp3" type="audio/mpeg">
+      <source src="Sounds/videoplayback.mp3" type="audio/mpeg">
+      <source src="Sounds/WhatsApp Audio 2023-12-24 at 8.25.38 PM.mpeg" type="audio/mpeg">
+      <source src="Sounds/music2.m4a" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="controls">
+      <button id="prevSong">&lt;&lt;</button>
+      <button id="playPause">&#9658;</button>
+      <button id="nextSong">&gt;&gt;</button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+   
+</body>
+</html>
